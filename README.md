@@ -6,7 +6,7 @@
 <h2>new传入两个参数，数据包和点击验证或提交按钮（可选）</h2>
 <p>var regex = new regexTool(jsonData, 'click');</p>
 <h1>数据包导入格式如下：</h1>
-<hgroup>
+<code>
 	var jsonData = {
 	'email': {
 		id: 'emailtext',
@@ -46,7 +46,7 @@
 		}
 	}
 };
-</hgroup>
+</code>
 <p>
 	通过初始化数据，绑定id，就可以实现常用的验证，可以使用回调函数，来执行验证后的操作，函数内回传一个布尔值！
 </p>
