@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式工具类测试</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <div id="bdyz">
+        <div>
+            <p>邮箱验证</p>
+            <input type="text" id="emailtext" value="">
+        </div>
+        <div>
+            <p>手机验证</p>
+            <input type="text" id="mobileyz">
+        </div>
+        <div>
+            <p>IP验证</p>
+            <input type="text" id="ipyz">
+        </div>
+        <div>
+            <p>匹配中文</p>
+            <input type="text" id="zwyz">
+        </div>
+        <div>
+            <p>固定电话</p>
+            <input type="text" id="ghyz">
+        </div>
+        <div>
+            <p>QQ</p>
+            <input type="text" id="qqyz">
+
+        </div>
+        <div>
+            <p>短信验证</p>
+            <input type="text" id="dxyz">
+        </div>
+        <div>
+            <p>身份证验证</p>
+            <input type="text" id="sfzyz" value="">
+        </div>
+        <div>
+            <p>用户名验证</p>
+            <input type="text" id="vname" value="">
+        </div>
+        <div>
+            <p>2-10个字长度限制</p>
+            <input type="text" id="shortword" value="">
+        </div>
+        <div>
+            <p>判断网址</p>
+            <input type="text" id="http" value="">
+        </div>
+        <a href="javascirpt:;" id="click">检测必填项</a>
+    </div>
+    <script src="js/tools.js"></script>
+    <script>
+    var regex = new regexTool(jsonData, 'click');
+    </script>
+</body>
+
+</html>
