@@ -1,4 +1,10 @@
 <h1>基于js的正则验证工具类</h1>
+<style>
+	code{
+		word-break:normal;
+		color: green;
+	}
+</style>
 <p>正在学习正则，写一个工具类，希望不断完善它</p>
 <h1>代码介绍</h1>
 <p>项目使用json来导入需要验证的配置，json中包括验证码与id，在json中，可以设置回调函数，通过判断参数布尔值，来执行验证后续的操作</p>
@@ -6,7 +12,7 @@
 <h2>new传入两个参数，数据包和点击验证或提交按钮（可选）</h2>
 <p>var regex = new regexTool(jsonData, 'click');</p>
 <h1>数据包导入格式如下：</h1>
-<code>
+<pre><code>
 	var jsonData = {
 	'email': {
 		id: 'emailtext',
@@ -46,7 +52,7 @@
 		}
 	}
 };
-</code>
+</code></pre>
 <p>
 	通过初始化数据，绑定id，就可以实现常用的验证，可以使用回调函数，来执行验证后的操作，函数内回传一个布尔值！
 </p>
